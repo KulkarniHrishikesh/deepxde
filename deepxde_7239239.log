@@ -1,0 +1,110 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = apte
+SLURM_JOB_ID = 7239239
+SLURM_JOB_NAME = cpu_gpu_comparison
+SLURM_JOB_NODELIST = gpu014
+SLURM_JOB_USER = hrishikeshnk
+SLURM_JOB_UID = 7324
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 6951
+SLURM_SUBMIT_DIR = /home/hrishikeshnk/github.copy/deepxde
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 
+SLURM_TASK_PID = 6951
+==========================================
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: activate-binutils_linux-64.sh failed, see above for details
+Mon Jun 17 15:17:26 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.74       Driver Version: 470.74       CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:60:00.0 Off |                    0 |
+| N/A   49C    P0    58W / 300W |      0MiB / 16160MiB |      2%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+
+     active environment : deepxde
+    active env location : /home/hrishikeshnk/.conda/envs/deepxde
+            shell level : 2
+       user config file : /home/hrishikeshnk/.condarc
+ populated config files : 
+          conda version : 22.11.1
+    conda-build version : not installed
+         python version : 3.7.7.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=11.4=0
+                          __glibc=2.17=0
+                          __linux=3.10.0=0
+                          __unix=0=0
+       base environment : /home/apps/DL-Conda-Py3.7  (read only)
+      conda av data dir : /home/apps/DL-Conda-Py3.7/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/apps/DL-Conda-Py3.7/pkgs
+                          /home/hrishikeshnk/.conda/pkgs
+       envs directories : /home/hrishikeshnk/.conda/envs
+                          /home/apps/DL-Conda-Py3.7/envs
+               platform : linux-64
+             user-agent : conda/22.11.1 requests/2.31.0 CPython/3.7.7 Linux/3.10.0-957.el7.x86_64 centos/7.6.1810 glibc/2.17
+                UID:GID : 7324:7324
+             netrc file : None
+           offline mode : False
+
+Using backend: jax
+
+Traceback (most recent call last):
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/jax/lib/__init__.py", line 27, in <module>
+    import jaxlib
+ModuleNotFoundError: No module named 'jaxlib'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/Allen_Cahn.py", line 5, in <module>
+    import deepxde as dde
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/deepxde/__init__.py", line 17, in <module>
+    from . import backend
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/deepxde/backend/__init__.py", line 100, in <module>
+    load_backend(get_preferred_backend())
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/deepxde/backend/__init__.py", line 36, in load_backend
+    mod = importlib.import_module(".%s" % mod_name.replace(".", "_"), __name__)
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/deepxde/backend/jax/__init__.py", line 1, in <module>
+    from .tensor import *  # pylint: disable=redefined-builtin
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/deepxde/backend/jax/tensor.py", line 2, in <module>
+    import jax
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/jax/__init__.py", line 37, in <module>
+    from . import config as _config_module
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/jax/config.py", line 18, in <module>
+    from jax._src.config import config
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/jax/_src/config.py", line 26, in <module>
+    from jax import lib
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/jax/lib/__init__.py", line 32, in <module>
+    ) from err
+ModuleNotFoundError: jax requires jaxlib to be installed. See https://github.com/google/jax#installation for installation instructions.

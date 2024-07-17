@@ -1,0 +1,188 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = apte
+SLURM_JOB_ID = 7239240
+SLURM_JOB_NAME = cpu_gpu_comparison
+SLURM_JOB_NODELIST = gpu014
+SLURM_JOB_USER = hrishikeshnk
+SLURM_JOB_UID = 7324
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 8043
+SLURM_SUBMIT_DIR = /home/hrishikeshnk/github.copy/deepxde
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 
+SLURM_TASK_PID = 8043
+==========================================
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: activate-binutils_linux-64.sh failed, see above for details
+Mon Jun 17 15:18:36 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.74       Driver Version: 470.74       CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:60:00.0 Off |                    0 |
+| N/A   49C    P0    58W / 300W |      0MiB / 16160MiB |      2%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+
+     active environment : deepxde
+    active env location : /home/hrishikeshnk/.conda/envs/deepxde
+            shell level : 2
+       user config file : /home/hrishikeshnk/.condarc
+ populated config files : 
+          conda version : 22.11.1
+    conda-build version : not installed
+         python version : 3.7.7.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=11.4=0
+                          __glibc=2.17=0
+                          __linux=3.10.0=0
+                          __unix=0=0
+       base environment : /home/apps/DL-Conda-Py3.7  (read only)
+      conda av data dir : /home/apps/DL-Conda-Py3.7/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/apps/DL-Conda-Py3.7/pkgs
+                          /home/hrishikeshnk/.conda/pkgs
+       envs directories : /home/hrishikeshnk/.conda/envs
+                          /home/apps/DL-Conda-Py3.7/envs
+               platform : linux-64
+             user-agent : conda/22.11.1 requests/2.31.0 CPython/3.7.7 Linux/3.10.0-957.el7.x86_64 centos/7.6.1810 glibc/2.17
+                UID:GID : 7324:7324
+             netrc file : None
+           offline mode : False
+
+Using backend: pytorch
+
+Compiling model...
+'compile' took 0.000168 s
+
+Training model...
+
+Step      Train loss    Test loss     Test metric
+0         [7.73e-01]    [7.73e-01]    []  
+1000      [4.08e-02]    [4.08e-02]    []  
+2000      [1.45e-02]    [1.45e-02]    []  
+3000      [1.14e-02]    [1.14e-02]    []  
+4000      [9.99e-03]    [9.99e-03]    []  
+5000      [9.23e-03]    [9.23e-03]    []  
+6000      [8.72e-03]    [8.72e-03]    []  
+7000      [8.30e-03]    [8.30e-03]    []  
+8000      [7.90e-03]    [7.90e-03]    []  
+9000      [7.52e-03]    [7.52e-03]    []  
+10000     [7.19e-03]    [7.19e-03]    []  
+11000     [6.94e-03]    [6.94e-03]    []  
+12000     [6.72e-03]    [6.72e-03]    []  
+13000     [6.59e-03]    [6.59e-03]    []  
+14000     [6.94e-03]    [6.94e-03]    []  
+15000     [6.11e-03]    [6.11e-03]    []  
+16000     [5.95e-03]    [5.95e-03]    []  
+17000     [5.79e-03]    [5.79e-03]    []  
+18000     [6.10e-03]    [6.10e-03]    []  
+19000     [5.56e-03]    [5.56e-03]    []  
+20000     [5.47e-03]    [5.47e-03]    []  
+21000     [5.38e-03]    [5.38e-03]    []  
+22000     [5.29e-03]    [5.29e-03]    []  
+23000     [7.17e-03]    [7.17e-03]    []  
+24000     [5.06e-03]    [5.06e-03]    []  
+25000     [4.88e-03]    [4.88e-03]    []  
+26000     [4.64e-03]    [4.64e-03]    []  
+27000     [4.32e-03]    [4.32e-03]    []  
+28000     [3.67e-03]    [3.67e-03]    []  
+29000     [2.54e-03]    [2.54e-03]    []  
+30000     [1.66e-03]    [1.66e-03]    []  
+31000     [1.68e-03]    [1.68e-03]    []  
+32000     [9.83e-04]    [9.83e-04]    []  
+33000     [8.29e-04]    [8.29e-04]    []  
+34000     [7.39e-04]    [7.39e-04]    []  
+35000     [1.16e-03]    [1.16e-03]    []  
+36000     [6.23e-04]    [6.23e-04]    []  
+37000     [5.86e-04]    [5.86e-04]    []  
+38000     [5.38e-04]    [5.38e-04]    []  
+39000     [5.10e-04]    [5.10e-04]    []  
+40000     [4.73e-04]    [4.73e-04]    []  
+
+Best model at step 40000:
+  train loss: 4.73e-04
+  test loss: 4.73e-04
+  test metric: []
+
+'train' took 292.071264 s
+
+Compiling model...
+'compile' took 0.000179 s
+
+Training model...
+
+Step      Train loss    Test loss     Test metric
+40000     [4.73e-04]    [4.73e-04]    []  
+41000     [1.59e-04]    [1.59e-04]    []  
+42000     [8.27e-05]    [8.27e-05]    []  
+43000     [4.93e-05]    [4.93e-05]    []  
+44000     [3.12e-05]    [3.12e-05]    []  
+45000     [2.38e-05]    [2.38e-05]    []  
+46000     [1.98e-05]    [1.98e-05]    []  
+47000     [1.70e-05]    [1.70e-05]    []  
+48000     [1.48e-05]    [1.48e-05]    []  
+49000     [1.35e-05]    [1.35e-05]    []  
+50000     [1.35e-05]    [1.35e-05]    []  
+51000     [1.35e-05]    [1.35e-05]    []  
+52000     [1.35e-05]    [1.35e-05]    []  
+53000     [1.35e-05]    [1.35e-05]    []  
+54000     [1.34e-05]    [1.34e-05]    []  
+55000     [1.34e-05]    [1.34e-05]    []  
+
+Best model at step 55000:
+  train loss: 1.34e-05
+  test loss: 1.34e-05
+  test metric: []
+
+'train' took 254.322801 s
+
+Saving loss history to /home/hrishikeshnk/github.copy/deepxde/loss.dat ...
+Saving training data to /home/hrishikeshnk/github.copy/deepxde/train.dat ...
+Saving test data to /home/hrishikeshnk/github.copy/deepxde/test.dat ...
+Traceback (most recent call last):
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: '../dataset/Allen_Cahn.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/Allen_Cahn.py", line 63, in <module>
+    X, y_true = gen_testdata()
+  File "/home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/Allen_Cahn.py", line 17, in gen_testdata
+    data = loadmat("../dataset/Allen_Cahn.mat")
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 222, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/hrishikeshnk/.conda/envs/deepxde/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: '../dataset/Allen_Cahn.mat'

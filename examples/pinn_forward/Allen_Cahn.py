@@ -8,7 +8,7 @@ from scipy.io import loadmat
 # Import tf if using backend tensorflow.compat.v1 or tensorflow
 from deepxde.backend import tf
 # Import torch if using backend pytorch
-# import torch
+import torch
 # Import paddle if using backend paddle
 # import paddle
 
@@ -38,12 +38,12 @@ def pde(x, y):
 
 # Hard restraints on initial + boundary conditions
 # Backend tensorflow.compat.v1 or tensorflow
-def output_transform(x, y):
-    return x[:, 0:1]**2 * tf.cos(np.pi * x[:, 0:1]) + x[:, 1:2] * (1 - x[:, 0:1]**2) * y
+#def output_transform(x, y):
+#    return x[:, 0:1]**2 * tf.cos(np.pi * x[:, 0:1]) + x[:, 1:2] * (1 - x[:, 0:1]**2) * y
 
 # Backend pytorch
-# def output_transform(x, y):
-#     return x[:, 0:1]**2 * torch.cos(np.pi * x[:, 0:1]) + x[:, 1:2] * (1 - x[:, 0:1]**2) * y
+def output_transform(x, y):
+    return x[:, 0:1]**2 * torch.cos(np.pi * x[:, 0:1]) + x[:, 1:2] * (1 - x[:, 0:1]**2) * y
 
 # Backend paddle
 # def output_transform(x, y):
