@@ -1,0 +1,173 @@
+==========================================
+SLURM_CLUSTER_NAME = param-brahma
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = apte
+SLURM_JOB_ID = 7466806
+SLURM_JOB_NAME = deepXde_allenCahn
+SLURM_JOB_NODELIST = gpu029
+SLURM_JOB_USER = hrishikeshnk
+SLURM_JOB_UID = 7324
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 43043
+SLURM_SUBMIT_DIR = /home/hrishikeshnk/github.copy/deepxde
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 
+SLURM_TASK_PID = 43043
+==========================================
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: activate-binutils_linux-64.sh failed, see above for details
+Wed Jul 17 18:35:03 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.74       Driver Version: 470.74       CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:61:00.0 Off |                    0 |
+| N/A   50C    P0    59W / 300W |      0MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:88:00.0 Off |                    0 |
+| N/A   49C    P0    60W / 300W |      0MiB / 16160MiB |      2%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ERROR: This cross-compiler package contains no program /home/apps/DL-Conda-Py3.7/bin/x86_64-conda_cos6-linux-gnu-ld
+ERROR: deactivate-binutils_linux-64.sh failed, see above for details
+
+     active environment : deepxde
+    active env location : /home/hrishikeshnk/.conda/envs/deepxde
+            shell level : 2
+       user config file : /home/hrishikeshnk/.condarc
+ populated config files : 
+          conda version : 22.11.1
+    conda-build version : not installed
+         python version : 3.7.7.final.0
+       virtual packages : __archspec=1=x86_64
+                          __cuda=11.4=0
+                          __glibc=2.17=0
+                          __linux=3.10.0=0
+                          __unix=0=0
+       base environment : /home/apps/DL-Conda-Py3.7  (read only)
+      conda av data dir : /home/apps/DL-Conda-Py3.7/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /home/apps/DL-Conda-Py3.7/pkgs
+                          /home/hrishikeshnk/.conda/pkgs
+       envs directories : /home/hrishikeshnk/.conda/envs
+                          /home/apps/DL-Conda-Py3.7/envs
+               platform : linux-64
+             user-agent : conda/22.11.1 requests/2.31.0 CPython/3.7.7 Linux/3.10.0-957.el7.x86_64 centos/7.6.1810 glibc/2.17
+                UID:GID : 7324:7324
+             netrc file : None
+           offline mode : False
+
+Using backend: pytorch
+
+Compiling model...
+'compile' took 0.008540 s
+
+Training model...
+
+Step      Train loss    Test loss     Test metric
+0         [7.93e-01]    [7.93e-01]    []  
+1000      [4.45e-02]    [4.45e-02]    []  
+2000      [1.44e-02]    [1.44e-02]    []  
+3000      [1.14e-02]    [1.14e-02]    []  
+4000      [9.79e-03]    [9.79e-03]    []  
+5000      [8.89e-03]    [8.89e-03]    []  
+6000      [8.20e-03]    [8.20e-03]    []  
+7000      [7.56e-03]    [7.56e-03]    []  
+8000      [7.08e-03]    [7.08e-03]    []  
+9000      [6.70e-03]    [6.70e-03]    []  
+10000     [6.37e-03]    [6.37e-03]    []  
+11000     [6.10e-03]    [6.10e-03]    []  
+12000     [5.85e-03]    [5.85e-03]    []  
+13000     [5.71e-03]    [5.71e-03]    []  
+14000     [5.46e-03]    [5.46e-03]    []  
+15000     [5.32e-03]    [5.32e-03]    []  
+16000     [5.22e-03]    [5.22e-03]    []  
+17000     [5.13e-03]    [5.13e-03]    []  
+18000     [5.37e-03]    [5.37e-03]    []  
+19000     [4.98e-03]    [4.98e-03]    []  
+20000     [4.92e-03]    [4.92e-03]    []  
+21000     [4.86e-03]    [4.86e-03]    []  
+22000     [4.81e-03]    [4.81e-03]    []  
+23000     [4.75e-03]    [4.75e-03]    []  
+24000     [4.71e-03]    [4.71e-03]    []  
+25000     [4.64e-03]    [4.64e-03]    []  
+26000     [4.59e-03]    [4.59e-03]    []  
+27000     [4.53e-03]    [4.53e-03]    []  
+28000     [4.50e-03]    [4.50e-03]    []  
+29000     [4.40e-03]    [4.40e-03]    []  
+30000     [4.88e-03]    [4.88e-03]    []  
+31000     [4.16e-03]    [4.16e-03]    []  
+32000     [4.77e-03]    [4.77e-03]    []  
+33000     [2.95e-03]    [2.95e-03]    []  
+34000     [2.05e-03]    [2.05e-03]    []  
+35000     [1.80e-03]    [1.80e-03]    []  
+36000     [1.62e-03]    [1.62e-03]    []  
+37000     [1.49e-03]    [1.49e-03]    []  
+38000     [1.38e-03]    [1.38e-03]    []  
+39000     [1.29e-03]    [1.29e-03]    []  
+40000     [1.19e-03]    [1.19e-03]    []  
+
+Best model at step 40000:
+  train loss: 1.19e-03
+  test loss: 1.19e-03
+  test metric: []
+
+'train' took 323.076243 s
+
+Compiling model...
+'compile' took 0.024042 s
+
+Training model...
+
+Step      Train loss    Test loss     Test metric
+40000     [1.19e-03]    [1.19e-03]    []  
+41000     [1.19e-03]    [1.19e-03]    []  
+42000     [1.19e-03]    [1.19e-03]    []  
+43000     [1.19e-03]    [1.19e-03]    []  
+44000     [1.19e-03]    [1.19e-03]    []  
+45000     [1.19e-03]    [1.19e-03]    []  
+46000     [1.19e-03]    [1.19e-03]    []  
+47000     [1.19e-03]    [1.19e-03]    []  
+48000     [1.19e-03]    [1.19e-03]    []  
+49000     [1.18e-03]    [1.18e-03]    []  
+50000     [1.18e-03]    [1.18e-03]    []  
+51000     [1.18e-03]    [1.18e-03]    []  
+52000     [1.18e-03]    [1.18e-03]    []  
+53000     [1.18e-03]    [1.18e-03]    []  
+54000     [1.18e-03]    [1.18e-03]    []  
+55000     [1.18e-03]    [1.18e-03]    []  
+
+Best model at step 55000:
+  train loss: 1.18e-03
+  test loss: 1.18e-03
+  test metric: []
+
+'train' took 116.413432 s
+
+Saving loss history to /home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/loss.dat ...
+Saving training data to /home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/train.dat ...
+Saving test data to /home/hrishikeshnk/github.copy/deepxde/examples/pinn_forward/test.dat ...
+Mean residual: 0.023198852
+L2 relative error: 0.16661472825604048
